@@ -25,3 +25,4 @@ class email_changing:
         return WebDriverWait(self.driver, time).until(
             expected_conditions.visibility_of_element_located((By.XPATH, self.updated_email_modal_locator)),
             message=f"Confirm modal {self.updated_email_modal_locator} not found")
+    
